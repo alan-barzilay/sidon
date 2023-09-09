@@ -1,0 +1,56 @@
+name: site-deploy
+on: [push]
+
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Directory Listings Index
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Generate Directory Listings
+        uses: jayanta525/github-pages-directory-listing@v3.0.0
+        with:
+          FOLDER: public #directory to generate index
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: "public"
+          # The message for the commit.
+          # Default: 'Commit from GitHub Actions (name of the workflow)'
+          message: "bot made: Indexing the public folder"
+
+      - name: Setup npm and run i18next
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm install astro-i18next
+      - run: npx astro-i18next generate
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: "src/pages/pt-BR src/pages/ar-LB src/pages/fr"
+          # The message for the commit.
+          # Default: 'Commit from GitHub Actions (name of the workflow)'
+          message: "bot made: Generating fr ptBR arLB pages with i18nextastro"
+
+      - name: Install, build, and upload your site output
+        uses: withastro/action@v0
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

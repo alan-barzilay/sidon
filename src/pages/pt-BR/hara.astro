@@ -1,0 +1,18 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Carousel from "../../layouts/Carousel.astro";
+import { t, changeLanguage } from "i18next";
+
+changeLanguage("pt-BR");
+---
+
+<Layout title={t("hara.title")}>
+		<h1 class="text-2xl font-bold text-center">{t("hara.h1")}</h1>
+
+		<p>{t("hara.body1")}</p>
+		<p>{t("hara.body2")}</p>
+		<p>{t("hara.body3")}</p>
+		<p>{t("hara.body4")}</p>
+		<Carousel page="hara"></Carousel>
+
+</Layout>

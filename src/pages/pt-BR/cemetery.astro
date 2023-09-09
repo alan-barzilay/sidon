@@ -1,0 +1,75 @@
+---
+import Layout from "../../layouts/Layout.astro";
+// import SvgCemetery from "../../layouts/SvgCemetery.astro";
+import { t, changeLanguage } from "i18next";
+
+changeLanguage("pt-BR");
+---
+
+<Layout title="Welcome to Astro.">
+  <h1 class="text-center text-2xl font-bold">{t("cemetery.h1")}</h1>
+
+  <p>{t("cemetery.body1")}</p>
+  <p>{t("cemetery.body2")}</p>
+  <p>{t("cemetery.body3")}</p>
+  <p>{t("cemetery.body4")}</p>
+
+  <!-- <SvgCemetery /> -->
+
+  <script src="../../js/tooltips.js"></script>
+  <script>
+    import { create_tooltip } from "../../js/tooltips.js";
+    let ids = ["CN1"];
+    for (let i = 1; i <= 42; i++) {
+      ids.push(`A${i}`);
+    }
+    for (let i = 1; i <= 65; i++) {
+      ids.push(`B${i}`);
+    }
+    for (let i = 1; i <= 90; i++) {
+      ids.push(`C${i}`);
+    }
+    for (let i = 1; i <= 48; i++) {
+      ids.push(`D${i}`);
+    }
+    for (let i = 1; i <= 68; i++) {
+      ids.push(`E${i}`);
+    }
+    // for (let i=1; i<=26 ; i++){
+    //     ids.push(`EN${i}`)
+    // }
+
+    for await (const id of ids) {
+      await create_tooltip(id);
+    }
+  </script>
+
+  <p>{t("cemetery.body5")}</p>
+  <p>{t("cemetery.body6")}</p>
+  <p>{t("cemetery.body7")}</p>
+
+  <div class="mt-11 flex flex-col items-center justify-center gap-4">
+    <div class="flex gap-4">
+      <select class="select select-bordered w-full max-w-xs" id="filter-field">
+        <option value="" disabled selected>Select a column</option>
+        <option value="age">age</option>
+        <option value="name">Name</option>
+        <option value="gender">Gender</option>
+      </select>
+
+      <input
+        id="filter-value"
+        type="text"
+        placeholder="Search"
+        class="input input-bordered w-full max-w-xs"
+      />
+
+      <button class="btn btn-outline" id="filter-clear">Clear</button>
+    </div>
+
+    <div class="w-3/6" id="example-table"></div>
+  </div>
+
+  <link href="../../public/teste/tabulator_modern.css" rel="stylesheet" />
+  <script src="../../js/table.js"></script>
+</Layout>

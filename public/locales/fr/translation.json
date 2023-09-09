@@ -1,0 +1,80 @@
+{
+  "site":{
+    "nabi":"Nabi Saydoun",
+    "cemetery":"Cimetière",
+    "jews":"Les juifs de Sidon",
+    "hara":"Le quartier Juif",
+    "sacred":"Lieux Sacrés",
+    "synagogue":"Synagogue",
+    "about":"Qui nous sommes"
+  },
+
+  "hara": {
+    "title":"Le quartier juif - Nabi Saydoun",
+    "h1": "Le quartier juif",
+    "body1": "Le quartier juif ('harat al-yahud' en Arabe) abrite l'ancienne synagogue, des magasins et des maisons. Le quartier est situé au bord de la vieille ville et avait même un portail qu'on fermait la nuit. Son histoire, encore une fois, est peu connue. Le quartier est actuellement peuplé de réfugiés palestiniens et syriens.",
+    "body2":"La majeure partie de la vieille ville fut réhabilitée au cours des dernières années. Le travail de renovation consista principalement à un nettoyage des grès des bâtiments, le remplacement de nouvelles fenêtres et de nouvelles lumières et la construction d'un nouveau système d'égouts. On peut visiter aujourd'hui plusieurs palais (Audi, Debbaneh, Solh, Hammoud, Khan al-Franj) et un nouveau musée de l'Antiquité en partenariat avec le British Museum est actuellement en construction.",
+    "body3":"Le quartier juif reste cependant dans un état déplorable et doit être réhabilité de toute urgence pour améliorer les conditions de vie de ses habitants et honorer la mémoire des familles juives qui y vivaient dans le passé.",
+    "body4":"Jusqu'en 1948, la plupart des familles juives vivaient dans le quartier juif. Hashem El-Madani (1928-2017), influent photographe portraitiste à Sidon, a documenté les célébrations de la vie quotidienne de plusieurs familles juives dans une série de photos émouvantes (qu'on publie ci-dessous avec l'aimable autorisation d'Akram Zaatari)."
+  },
+
+  "synagogue": {
+    "title":"Synagogue - Nabi Saydoun",
+    "h1": "Synagogue",
+    "body1": "L'ancienne synagogue est située au cœur du quartier juif de Sidon. Comme les autres sites juifs de la ville, la synagogue n'a pas d'âge. Elle daterait peut-être de l'Antiquité ou elle aurait été construite plus récemment après qu'un tremblement de terre dévastateur détruisit une partie de la vieille ville en 1759. Des fouilles récentes à Sidon ont mis au jour des objets sacrés remontant au XVe siècle (une Torah, plusieurs menorah, etc.), mais dans une partie différente de la vieille ville. À la lumière de ces récentes découvertes, nous espérons faire appel à des archéologues et autres experts pendant le processus de rénovation pour reconstituer la longue histoire de la synagogue et du quartier juif.",
+    "body2":"Après que les dernières familles juives aient quitté Sidon dans les années 1980, la synagogue tomba en décrépitude. Elle est actuellement occupée par une famille de réfugiés syriens. La réhabilitation de ce lieu sacré plein de souvenirs sera notre prochain effort après la réhabilitation du cimetière."
+  },
+
+  "sacred":{
+    "title":"Lieux Sacrés - Nabi Saydoun",
+    "h1":"Lieux Sacrés",
+    "h21": "La tombe de Nabi Soujoud",
+    "body1":"La tradition juive considère le tombeau du «prophète» Soujoud comme celui d'Oholiab, fils d'Ahisamach, de la tribu juive de Dan. Il a été nommé par Dieu pour aider Bezalel à construire le Tabernacle (Mishkan) qui a été porté pendant l'errance du peuple d'Israël dans le désert (Exode 38: 21-23).",
+    "body2":"Le lieu de sépulture de Nabi Soujoud était le lieu de pèlerinage le plus important pour les juifs de Sidon, de Palestine, de Syrie, d'Égypte et du Liban, venus célébrer la fête de printemps juive de Lag B'Omer. Le pèlerinage s'achevait par une visite de trois jours sur le site de Nabi Soujoud, à Chavouot. Le dernier jour, les pèlerins allumaient des feux festifs, auxquels des musulmans participaient aux sacrifices d'animaux et aux voeux religieux.",
+    "body3":"La tombe se trouve au sud de Jabal Rayhan, à l'est de la ville de Soujoud. À la fin des années 1930, une salle de prière fut construite sur le site, mais elle semble avoir été détruite pendant la guerre civile (1975-1990).",
+    "body4":"Des amulettes contenant du sable de ce lieu sacré en petits récipients en bois ou en tissu furent portés par beaucoup",
+    "h22": "La tombe de Nabi Saydoun",
+    "body5":"'Zabulon habitera sur la côte des mers, Il sera sur la côte des navires, Et sa limite s'étendra du côté de Sidon.' Genèse 49:13",
+    "body6":"Selon la tradition juive, il s'agit du tombeau du prophète biblique Zabulon, le sixième fils du patriarche Jacob et de Léa. Il était le fondateur de la tribu de Zabulon, qui habitait une région qui comprend le sud du Liban contemporain.",
+    "body7":"La tombe de Zabulon, appelée 'Saydoun' par les Libanais, est un petit bâtiment avec un toit en forme de dôme situé près d'une mosquée au centre-ville de Sidon. Les juifs y faisaient un pèlerinage vers la fin du mois de printemps d'Iyyar.",
+    "body8":"La tombe est en grande partie oubliée aujourd'hui, mais elle reste de facto un lieu sacré de vénération et de culte pour les juifs comme pour les musulmans. Comme une grande partie de l'héritage juif de Sidon, le lieu est là, mais délaissé."
+  },
+
+  "cemetery":{
+    "title":"Cimetière - Nabi Saydoun",
+    "h1":"Cimetière",
+    "body1":"Le cimetière juif se trouve au sud de Sidon sur une dune antique dont le même sable fut utilisé par les Sidoniens dans l'Antiquité pour façonner leur art de la verrerie, une compétence remarquée par le grand poète athénien Homère au VIIIe siècle avant notre ère.",
+    "body2":"La réhabilitation de la dune est notre premier projet. De nombreuses pierres tombales sont constituées de vestiges d'anciennes colonnes romaines et grecques. L'âge du site est enterré avec les morts sous la surface de la dune et reste inconnu. Sur son territoire se trouvent également un des plus anciens habitats chalcolithiques du monde (ref: Saidah, R. 1979. Fouilles de Sidon-Dakerman: L'agglomération chalcolithique. Berytus. 27. 29-55).",
+    "body3":"Au cours de la première phase de nettoyage du site (septembre à novembre 2018), une attention particulière a été accordée à la zone d'inhumation afin de récupérer autant de tombes que possible. De nombreuses pierres tombales ont été retrouvées manquantes et certaines ont été vandalisées. De plus, de nombreuses inscriptions n'étaient pas lisibles en raison de l'action errosive de la pluie et du sable, en particulier sur les colonnes de granit romaines qui servent de pierres tombales.",
+    "body4":"Pour éviter tout dommage supplémentaire et toute perte d'informations, il a été décidé de photographier chaque tombe ou pierre tombale et de lui attribuer un numéro de position géographique pour référence ultérieure. À l'aide de ces photographies, une équipe de bénévoles dévoués a traduit les inscriptions en hébreu, en arabe et en français et produit un tableau répertoriant le nom du défunt, ainsi que le nom de son père et la date de son décès, le cas échéant. Certaines informations ont été recueillies auprès d'autres sources et nous espérons découvrir de nombreuses autres tombes à mesure que le nettoyage avance. Des morceaux de pierres tombales brisées ont été entreposés dans un conteneur sur le site, dans l'espoir que des efforts pourront être déployés pour en reconstituer certaines à l'avenir." ,
+    "body5":"Le tableau ci-dessous répertorie toutes les sépultures identifiées avec une pierre tombale lisible dans le cimetière juif. La liste est incomplète car de nombreuses pierres tombales sont brisées ou illisibles, et de nombreuses autres tombes sont encore enfouies sous la dune. Nous espérons élargir la liste avec le temps et trouver un moyen d'identifier et d'honorer tous ceux qui y sont enterrés. Nous vous invitons à parcourir la liste et à nous informer de toute anomalie à nabisaydoun@gmail.com.",
+    "body6":"Vous pouvez consulter le site www.farhi.org pour plus d'informations généalogiques.",
+    "body7":"Il est à noter que pendant la guerre civile, le cimetière juif de Beyrouth étant situé sur la ligne verte séparant les combattants, aucune cérémonie d'inhumation n'a pu avoir lieu. Tous les défunts ont été transportés à Sidon et y ont été enterrés; on a décompté au moins 18 de ces tombes."
+  },
+
+  "about":{
+    "title":"Qui nous sommes - Nabi Saydoun",
+    "h1":"Qui nous sommes",
+    "body1":"Nous sommes un groupe dédié à la préservation du patrimoine juif à Sidon. Certains d'entre nous viennent de familles juives de Sidon ou du Liban. Certains sont des amis de la communauté juive libanaise ou simplement intéressés par le patrimoine culturel et historique de Sidon. Nous encourageons toutes contributions pour la réalisation de nos objectifs.",
+    "body2":"Les raisons qui nous impliquent dans ce projet sont multiples: honorer nos ancêtres et leur mémoire; faire revivre les sites historiques au Liban qui risquent de s'effondrer; enrichir la vie culturelle et l'attractivité touristique de Sidon; et / ou  attester et défendre la riche histoire de coexistence au Liban.",
+    "body3":"Le nom Nabi Saydoun est couramment utilisé par les Sidoniens pour désigner la tombe de Zabulon, l'un des fils du patriarche Jacob, qui aurait été enterré à Sidon. En effet, dans une carte en mosaïque de la terre sainte trouvée dans l'église St George de Madaba (en Jordanie) et datant du troisième siècle, Sidon est désignée en lettres grecques comme la ville de \"Zabulon\".",
+    "body4":"La tombe de Nabi Saydoun (le prophète Saydoun) est proche du centre-ville. Elle est en grande partie oubliée aujourd'hui, mais elle reste de facto un lieu sacré de pèlerinage et de culte pour toutes les religions. Comme une grande partie de l'héritage juif de Sidon, le lieu est physiquement là, mais oublié.",
+    "body5":"Les autres sites patrimoniaux juifs de Sidon et de ses environs - le quartier juif (harat al-yahud), l'ancienne synagogue (al-knis) et le cimetière (al-jabbana ou al-maqbara) - sont également entourés de mystère. Mais ils existent, en pierre et en souvenirs, et ils témoignent de la grande diversité de vies vécues sur les rives de cette ville de plus de six mille ans (environ 250 générations).",
+    "body6":"Nous proposons de réhabiliter progressivement ces sites et de nous engager dans d'autres projets créatifs au cours des prochaines années. Le processus de réintégration de ces sites est aussi important que l'objectif lui-même.",
+    "body7":"Nous nous efforcerons de travailler avec des artistes, des architectes, des agriculteurs, des artisans et des citoyens de la région pour faire en sorte que le passé rejoigne le présent, pour nouer de nouvelles amitiés, pour que la pierre acquière plus de sens, pour élargir encore le caractère de la ville et attirer plus de visiteurs afin d'améliorer ses conditions économiques autant que forger de nouvelles relations humaines.",
+
+    "body8":"Vérifiez quelques-uns des travaux effectués jusqu'à présent au cimetière! (Seleument en anglais)",
+    "report1":"Rapport no. 1 (29 Octobre 2018)",
+    "report2":"Rapport no. 2 (10 Octobre 2019)",
+
+    "body9":"Sidon comptait une communauté juive vibrante. Jusqu'en 1948, la plupart des familles juives vivaient dans le quartier juif dans la vieille ville. Au début du XXème siècle, beaucoup de ces familles émigrèrent au Brésil mais aussi aux États-Unis, en Europe, en Asie et en Afrique. Il existe en effet une synagogue de Sidon à Brooklyn, à Rio de Janeiro et à São Paulo.",
+    "body10":"Certains noms de famille juives Sidoniennes incluent: Arazi, Balaciano, Barzilay, Bassal (Levy), Beniste, Boukai, Braun, Cohen, Dana, Darwich, Diwan, Fuerteh, Gabbay, Hadid, Hasson, Kattan, Khalili, Khabieh, Khayat, Khodary, Khodary, Laoui (Levy / Lawi), Liniado, Levy, Mizrahi, Moghrabi, Nigri, Pariente, Politi, Sasson, Simantov, Srour, Valido et Zeitouni.",
+    "body11":"Comme beaucoup d'expatriés libanais, les juifs sidoniens ont généralement une double personnalité. D'une part, ils ont tendance à réussir et à s'intégrer dans leurs nouveaux pays d'accueil. Mais chez eux, ils préfèrent conserver leur idiome, leurs traditions religieuses, leurs chants et leurs habitudes culinaires. Ils se soucient de leurs ancêtres enterrés au cimetière de Sidon, beaucoup d'entre eux refusent de vendre leurs biens dans le quartier historique, ils rêvent de retrouver leurs anciens amis et transmettent à leurs enfants de beaux souvenirs de la ville de leurs aînés.",
+    "body12":"Nous espérons que nos efforts collectifs briseront le silence du temps et le traumatisme de la distance et encourageront les juifs sidoniens à revenir visiter, à renouer leurs relations et à participer à l'avenir de la ville qu'ils chérissent."
+  },
+  "index":{
+    "title":"Nabi Saydoun",
+    "h1":"Renouons avec notre héritage",
+    "body1":"Dans la ville de Saïda (ou Sidon) au Liban se trouvent les débris d'une communauté juive autrefois florissante. Même s'il n'y a plus de juifs dans la ville, leur histoire et leurs racines subsistent. Venez donc avec nous pour soulager, commémorer et revitaliser cette culture oubliée."
+  }
+}

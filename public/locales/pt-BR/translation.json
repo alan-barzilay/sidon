@@ -1,0 +1,83 @@
+{
+  "site":{
+    "nabi":"Nabi Saydoun",
+    "cemetery":"Cemitério",
+    "jews":"Os judeus de Saida",
+    "hara":"Hara",
+    "sacred":"Locais Sagrados",
+    "synagogue":"Sinagoga",
+    "about":"Sobre-nós"
+  },
+
+  "hara": {
+    "title":"Hara",
+    "h1":"Hara",
+    "body1":"Harat al-Yahud (bairo judeu em Arabe) abriga a antiga sinagoga, lojas e casas. Fica ao lado da cidade velha, e tem um portão que era fechado à noite. Sua história, novamente, não é bem conhecida. Atualmente é habitada principalmente por refugiados palestinos e sírios.",
+    "body2":"Nos últimos anos a maior parte da cidade velha foi reabilitada, com a limpeza dos arenitos dos edifícios, substituição de janelas e luminárias, e um novo sistema de esgotos. Existem agora vários palácios que podem ser visitados (Audi, Debbane, Solh, Hammoud e Khan al-Franj), e um novo Museu da Antiguidade está sendo construído em parceria com o Museu Britânico.",
+    "body3":"Haret al-Yahud, no entanto, continua em mal estado e precisa urgentemente de reabilitação, para melhorar as condições de vida de seus habitantes e honrar a memória das famílias judias que lá viviam no passado. ",
+    "body4":"Até 1948, a maioria das famílias judias vivia no Hara. Hashem El-Madani (1928-2017), o influente fotógrafo retratista de Saida, documentou a vida de famílias judias e as celebrações da vida em fotos comoventes (cortesia de Akram Zaatari)."
+  },
+
+  "synagogue": {
+    "title":"Sinagoga",
+    "h1": "Sinagoga",
+    "body1": "A antiga sinagoga situa-se no coração do Harat al-Yahud (bairro judeu). Como os outros locais judaicos em Saida, é sem idade. Pode ter estado lá desde a antiguidade ou pode ter sido construída mais recentemente após um dos terremotos devastadores em 1759 que destruiu partes da cidade antiga. Escavações recentes em Saida desenterraram alguns artefatos judaicos que remontam ao século XV (um pergaminho da Torá, várias menorot etc.), mas em uma parte diferente da cidade velha. À luz dessas recentes descobertas, esperamos trazer especialistas em arqueologia durante o processo de renovação para aprender mais sobre a longa história da sinagoga e do bairro judeu.",
+    "body2":"Depois que as últimas famílias judias deixaram Saida na década de 1980, a sinagoga caiu em decadência e atualmente é ocupada por uma família de refugiados sírios. A reabilitação deste local sagrado repleto de memórias seria, esperamos, o nosso próximo esforço (depois de concluirmos a reabilitação do cemitério)."
+  },
+
+  "sacred":{
+    "title":"Locais Sagrados - Nabi Saydoun",
+    "h1":"Locais Sagrados",
+    "h21": "O túmulo de Nabi Sujud",
+    "body1":"A tradição judaica considera o túmulo do 'profeta' de Sujud como sendo o de Oholiab, filho de Ahisamach, da tribo judaica de Dan. Ele foi designado por Deus para ajudar Bezalel a construir o Tabernáculo (Mishkan) que era carregado durante as andanças do povo de Israel no deserto. (Êxodo 38: 21-23)",
+    "body2":"O local do enterro de Nabi Sujud era o destino de peregrinação mais importante para os judeus de Saida, Palestina, Síria, Egito e Líbano, que vinham celebrar a festa anual da primavera judaica de Lag B'Omer. A peregrinação culminava em uma visita de três dias ao local de Nabi Sujud durante Shavuot. No último dia, os peregrinos acendiam fogueiras, nas quais os muçulmanos também participavam lado a lado com os judeus, com sacrifício de animais e votos religiosos.",
+    "body3":"A sepultura está localizada no sul de Jabal Rayhan, a leste da cidade de Sujud. No final de 1930, uma sala de oração foi construída no local, mas parece ter sido destruída durante a guerra civil (1975-1990).",
+    "body4":"Amuletos eram feitos colocando areia do local em pequenos recipientes de madeira ou tecido e usados por muitos.",
+    "h22": "O túmulo de Nabi Saydoun",
+    "body5":"",
+    "body6":"De acordo com a tradição judaica, este é o túmulo do profeta bíblico Zebulon, o sexto filho do Patriarca Jacó e Leah. Ele foi o fundador da tribo Zebulon, que habitava uma área que incluía o que é hoje o sul do Líbano",
+    "body7":"O túmulo de Zebulon, chamado Saydoun pelos libaneses, é um pequeno prédio com um teto abobadado perto de uma mesquita no centro de Saida. Os judeus costumavam fazer uma peregrinação ao local no final do mês de primavera de Iyyar.",
+    "body8":"É amplamente esquecido e ignorado hoje, mas permanece de fato um local sagrado de veneração e adoração por pessoas de todas as religiões. Como grande parte da herança judaica em Saida, está lá, mas esquecida. "
+},
+
+  "cemetery":{
+    "title":"Cemitério - Nabi Saydoun",
+    "h1":"Cemitério",
+    "body1":"O cemitério judeu fica no sul de Saida, em uma duna antiga, na mesma areia que os sidônios usavam na antiguidade para criar suas finas obras de vidro, uma habilidade que foi notada pelo grande poeta ateniense Homero no século VIII AC.",
+    "body2":"A reabilitação da duna é o nosso primeiro projeto. Muitas lápides são feitas de vestígios de antigas colunas romanas e gregas. A idade do local está enterrada com os mortos sob a superfície da duna e permanece desconhecida. Em seu solo também estão alguns dos mais antigos habitats calcolíticos do mundo. [referência: Saidah, R. (1979). Fouilles de Sidon-Dakerman: L'agglomération chalcolithique. Berytus.27. 29-55. ]",
+    "body3":"Durante a primeira fase de limpeza do local (setembro a novembro de 2018), foi dada especial atenção à área de sepultamento, a fim de recuperar o maior número possível de túmulos. Muitas lápides estavam faltando e algumas vandalizadas. Também muitas inscrições não eram legíveis devido à ação dos elementos (chuva, areia e erosão), particularmente nas colunas romanas de granito, que foram usadas como lápides.",
+    "body4":"Para evitar mais danos e perda de informações, decidiu-se fotografar cada túmulo e lápide e atribuir-lhe um número posicional geográfico para referência futura. Usando essas fotografias, uma equipe dedicada de voluntários traduziu as inscrições em hebraico, árabe e francês e produziu uma tabela listando o nome do falecido e, quando disponível, o nome do pai e a data da morte. Algumas informações foram coletadas de outras fontes e esperamos descobrir muitos mais túmulos à medida que a limpeza avança. Pedaços de lápides quebradas foram armazenados em um contêiner no local, com a esperança de que esforços possam ser feitos para reconstituir alguns deles no futuro." ,
+    "body5":"A tabela abaixo lista todos os locais de sepultamento identificados com uma lápide legível no Cemitério Judaico de Saida. A lista está incompleta, pois muitas lápides estão quebradas ou ilegíveis, e há muitos mais túmulos ainda enterrados sob a duna. Esperamos expandir a lista ao longo do tempo e encontrar uma maneira de identificar e honrar todos os que estão enterrados no cemitério. Nós convidamos vocês a explorar a lista e nos informar de qualquer discrepância escrevendo para nabisaydoun@gmail.com.",
+    "body6":"Você pode querer visitar o site www.farhi.org para mais informações genealógicas, incluindo nomes de parentes e local e data de nascimento.",
+    "body7":"É digno de nota que durante a guerra civil, como o cemitério judeu de Beirute estava situado na linha verde que separava os combatentes, nenhuma cerimônia de enterro podia acontecer. Todos os mortos foram transportados para Saida e sepultados ali; há pelo menos 18 desses túmulos."
+  },
+
+  "about":{
+    "title":"Sobre-nós - Nabi Saydoun",
+    "h1":"Sobre-nós",
+    "body1":"Somos um grupo dedicado à preservação da herança judaica em Saida. Alguns de nós vêm de famílias judias de Saida ou do Líbano. Outros são amigos da comunidade judaica libanesa ou simplesmente pessoas interessadas na herança cultural e histórica de Saida. São bem vindas todas as formas de contribuição para que possamos atingir os nossos objetivos.",
+    "body2":"Cada um de nós está envolvido neste projeto por diferentes razões: para honrar nossos antepassados e sua memória; reviver locais históricos no Líbano, que estão em risco de colapso; enriquecer a vida cultural e o apelo turístico de Saida; e/ou atestar e defender a rica história de coexistência no Líbano.",
+    "body3":"O nome Nabi Saydoun é comumente usado pelos sidônios para designar o túmulo de Zebulon, um dos filhos do patriarca Jacó, que se diz estar enterrado em Saida. Num antigo mapa de mosaico do terceiro século da terra santa, encontrado na Igreja de São Jorge de Madaba (na Jordânia), Saida é designada como \"Zebulon\" em letras gregas.",
+
+
+    "body4":"A tumba de Nabi Saydoun fica perto do centro de Saida. Embora ela se encontre esquecida e ignorada nos dias de hoje ela segue sendo um local sagrado de peregrinação e adoração por diversas religiões. Como o resto da herança judaica de Saida, a tumba segue existindo, porém esquecida.",
+    "body5":"Os outros locais de herança judaica dentro e nos arredores de Saida - o bairro judeu (harat al-yahud), a antiga sinagoga (al-knis) e o cemitério (al-jabbana ou al-maqbara) - são igualmente envoltos em mistério. Mas eles existem, de pedra e memórias, e eles atestam a grande diversidade de vidas vividas nas margens desta cidade ao longo de seis mil anos (cerca de 250 gerações).",
+    "body6":"Planejamos reabilitar gradualmente esses sítios, e esperamos nos engajar em outros projetos criativos, nos próximos anos. O processo de reintegração desses sítios a Saida é tão importante quanto o próprio objetivo.",
+    "body7":"Nosso objetivo é trabalhar com artistas locais, arquitetos, agricultores, artesãos e cidadãos, para fazer o passado se encaixar novamente, para desenvolver novas amizades, para ampliar ainda mais o caráter da cidade e para atrair mais visitantes a fim de melhorar as condições econômicas da cidade, tanto quanto para moldar novas relações humanas.",
+
+    "body8":"Confira um pouco do trabalho realizado no cemitério! (apenas em inglês)",
+    "report1":"Relatório nº 1 (29 outubro 2018)",
+    "report2":"Relatório nº 2 (10 outubro 2019)",
+
+    "body9":"Saida tinha uma comunidade judaica vibrante. Até 1948, a maioria das famílias judias vivia no Harat al-Yahud, na cidade velha. No início de século XX, muitas famílias judias emigraram para o Brasil, mas também para os Estados Unidos, Europa, Ásia e África. Há uma Sinagoga Sidon no Brooklyn, no Rio de Janeiro e em São Paulo.",
+    "body10":"Alguns dos nomes de família incluem: Arazi, Balaciano, Barzilay, Bassal (Levy), Beniste, Boukai, Braun, Cohen, Dana, Darwich, Diwan, Fuerteh, Gabbay, Hadid, Hasson, Kattan, Khalili, Khabieh, Khayat, Khodary, Laoui (Levy / Lawi), Liniado, Levy, Mizrahi, Moghrabi, Nigri, Pariente, Politi, Sasson, Simantov, Srour, Valido e Zeitouni.  ",
+    "body11":"Como outros expatriados libaneses, os judeus sidônios no exterior tendem a ter uma dupla identidade. Por um lado, tendem a ser bem sucedidos e integrados nos seus novos países de residência. Mas em casa, eles tendem a manter seu idioma específico, tradições e músicas religiosas e hábitos culinários. Eles se preocupam com seus ancestrais enterrados no cemitério de Saida, muitos se recusam a vender suas propriedades no histórico bairro Hara, eles anseiam por ouvir de velhos amigos novamente, e transmitem aos seus filhos boas lembranças da cidade de seus anciãos.",
+    "body12":"Esperamos que nossos esforços coletivos também quebrem o feitiço do tempo e o trauma da distância, e os encorajem a voltar, visitar, renovar suas relações e participar do futuro da cidade."
+  },
+  "index":{
+    "title":"Nabi Saydoun",
+    "h1":"Venha se reconectar com nossa herança",
+    "body1":"Na cidade de Saida (ou Sidon) no Líbano, encontram-se os escombros de uma comunidade judaica que em tempos passados foi vibrante e ativa. Embora não existam mais judeus na cidade suas raízes e história seguem vivas, então venha conosco, relembrar, reviver e revitalizar essa cultura esquecida."
+    }
+
+}

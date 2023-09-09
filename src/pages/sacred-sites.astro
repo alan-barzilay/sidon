@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Carousel from "../layouts/Carousel.astro";
+import { t, changeLanguage } from "i18next";
+
+changeLanguage("en");
+---
+
+
+<Layout title={t("sacred.title")}>
+		<h1 class="text-2xl font-bold text-center">{t("sacred.h1")}</h1>
+
+        <h2 class="text-xl font-bold text-center mt-5">{t("sacred.h21")}</h2>
+
+		<p>{t("sacred.body1")}</p>
+		<p>{t("sacred.body2")}</p>
+		<p>{t("sacred.body3")}</p>
+		<p>{t("sacred.body4")}</p>
+
+        <h2 class="text-xl font-bold text-center mt-7">{t("sacred.h22")}</h2>
+
+		<p>{t("sacred.body5")}</p>
+		<p>{t("sacred.body6")}</p>
+		<p>{t("sacred.body7")}</p>
+		<p>{t("sacred.body8")}</p>
+
+		<Carousel page="sacred"></Carousel>
+
+</Layout>
