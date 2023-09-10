@@ -6,7 +6,6 @@ import Navbar from "../../layouts/Navbar.astro";
 import Footer from "../../layouts/Footer.astro";
 import { t, changeLanguage } from "i18next";
 import { Image } from "astro:assets";
-// import { Debug } from 'astro:components';
 import hero_bg from "../../assets/hero_bg_full.png";
 
 changeLanguage("ar-LB");
@@ -21,7 +20,6 @@ changeLanguage("ar-LB");
     }
   </style>
 
-  <!-- <Debug {hero_bg} /> -->
 
   <div class="mx-auto max-w-[90rem] min-[1441px]:mt-6">
     <div class="relative">
@@ -29,6 +27,7 @@ changeLanguage("ar-LB");
         <Image
           id="div_img"
           src={hero_bg}
+          format="avif"
           alt="Background illustration of an old cemetery in watercolour style with warm muted colors and a few trees with orange leafs."
           class="mx-auto h-[120dvh] object-cover sm:h-auto"
         />
@@ -43,9 +42,6 @@ changeLanguage("ar-LB");
           <Navbar/>
         </div>
       </header>
-
-
-
 
       <div class="absolute left-2/4 top-20 z-10 -translate-x-1/2 md:top-[24%]">
         <h1

@@ -1,6 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-// import SvgCemetery from "../../layouts/SvgCemetery.astro";
+import SvgCemetery from "../../layouts/SvgCemetery.astro";
 import { t, changeLanguage } from "i18next";
 
 changeLanguage("fr");
@@ -14,7 +14,7 @@ changeLanguage("fr");
   <p>{t("cemetery.body3")}</p>
   <p>{t("cemetery.body4")}</p>
 
-  <!-- <SvgCemetery /> -->
+  <SvgCemetery />
 
   <script src="../../js/tooltips.js"></script>
   <script>
@@ -70,6 +70,6 @@ changeLanguage("fr");
     <div class="w-3/6" id="example-table"></div>
   </div>
 
-  <link href="../../public/teste/tabulator_modern.css" rel="stylesheet" />
+  <link href="src/assets/tabulator_modern.css" rel="stylesheet" />
   <script src="../../js/table.js"></script>
 </Layout>
