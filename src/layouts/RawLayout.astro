@@ -1,29 +1,29 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 const { title } = Astro.props;
 import i18next from "i18next";
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from "astro:transitions";
 ---
 
-<!DOCTYPE html>
-<html lang={i18next.language} class="bg-bege text-black " dir={i18next.dir()}>
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{title}</title>
-		<ViewTransitions />
-	</head>
-	<body class="text-lg text-justify
-	[&_p]:max-w-[80ch] [&_p]:mx-auto [&_p]:leading-6 [&_p]:mt-3 [&_h1]:mt-10
-	debug-screens
-	">
-		<main>
-
-			<slot/>
-
-		</main>
-	</body>
+<!doctype html>
+<html lang={i18next.language} class="bg-bege text-black" dir={i18next.dir()}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <base href={Astro.site + import.meta.env.BASE_URL.slice(1)} />
+    <ViewTransitions />
+  </head>
+  <body
+    class="debug-screens text-justify
+	text-lg [&_h1]:mt-10 [&_p]:mx-auto [&_p]:mt-3 [&_p]:max-w-[80ch]
+	[&_p]:leading-6"
+  >
+    <main>
+      <slot />
+    </main>
+  </body>
 </html>

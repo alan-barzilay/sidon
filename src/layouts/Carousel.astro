@@ -1,4 +1,6 @@
 ---
+import { localizePath } from "astro-i18next";
+
 interface Props {
   page: string;
 }
@@ -6,9 +8,6 @@ const { page } = Astro.props;
 
 let imgs;
 switch (page) {
-  case "teste":
-    imgs = await Astro.glob("../../public/teste_imgs/*");
-    break;
   case "synagogue":
     imgs = await Astro.glob("../../public/synagogue_imgs/*");
     break;
@@ -20,14 +19,13 @@ switch (page) {
     break;
 }
 imgs = imgs.map((img) => {
-  img = img["default"]
-  if (typeof img === 'string') return img
-  return img["src"]
-}
-);
-
+  img = img["default"];
+  if (typeof img === "string") return img;
+  return img["src"];
+});
+const url = Astro.url.pathname;
 import { create_carousel } from "../js/carousel.js";
-const carousel = create_carousel(imgs);
+const carousel = create_carousel(imgs, url);
 ---
 
 <div set:html={carousel} class="mx-auto mt-7 sm:w-96" />

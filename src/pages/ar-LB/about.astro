@@ -4,32 +4,41 @@ import { t, changeLanguage } from "i18next";
 
 changeLanguage("ar-LB");
 ---
+
 <Layout title={t("about.title")}>
-    <h1 class="text-2xl font-bold text-center">{t("about.h1")}</h1>
-    <p>{t("about.body1")}</p>
-    <p>{t("about.body2")}</p>
-    <p>{t("about.body3")}</p>
-    <p>{t("about.body4")}</p>
-    <p>{t("about.body5")}</p>
-    <p>{t("about.body6")}</p>
-    <p>{t("about.body7")}</p>
+  <h1 class="text-center text-2xl font-bold">{t("about.h1")}</h1>
+  <p>{t("about.body1")}</p>
+  <p>{t("about.body2")}</p>
+  <p>{t("about.body3")}</p>
+  <p>{t("about.body4")}</p>
+  <p>{t("about.body5")}</p>
+  <p>{t("about.body6")}</p>
+  <p>{t("about.body7")}</p>
 
-    <p>{t("about.body8")}</p>
+  <p>{t("about.body8")}</p>
 
-    <div class="flex gap-10 justify-center my-9">
-        <a href="/public/documents/report1.pdf" class="flex flex-col items-center"  target="_blank">
-            <img src="/public/pdf_logo.svg" width="80" alt="pdf illustration.">
-            <p class="font-bold">{t("about.report1")}</p>
-        </a>
-        <a href="/public/documents/report2.pdf" class="flex flex-col items-center"  target="_blank">
-            <img src="/public/pdf_logo.svg" width="80" alt="pdf illustration.">
-            <p class="font-bold">{t("about.report2")}</p>
-        </a>
-    </div>
+  <div class="my-9 flex justify-center gap-10">
+    <a
+      href="./documents/report1.pdf"
+      class="flex flex-col items-center"
+      target="_blank"
+    >
+      <img src="./pdf_logo.svg" width="80" alt="pdf illustration." />
+      <p class="font-bold">{t("about.report1")}</p>
+    </a>
+    <a
+      href="./documents/report2.pdf"
+      class="flex flex-col items-center"
+      target="_blank"
+    >
+      <img src="./pdf_logo.svg" width="80" alt="pdf illustration." />
+      <p class="font-bold">{t("about.report2")}</p>
+    </a>
+  </div>
 
-    <p>{t("about.body9")}</p>
-    <!-- necessario? -->
-    <p>{t("about.body10")}</p>
-    <p>{t("about.body11")}</p>
-    <p>{t("about.body12")}</p>
+  <p>{t("about.body9")}</p>
+  <!-- necessario? -->
+  <p>{t("about.body10")}</p>
+  <p>{t("about.body11")}</p>
+  <p>{t("about.body12")}</p>
 </Layout>

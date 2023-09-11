@@ -1,10 +1,11 @@
 ---
 import { t } from "i18next";
+import { localizePath } from "astro-i18next";
 ---
 
-<nav >
+<nav>
   <div class="navbar">
-    <div class="dropdown-left dropdown">
+    <div class="dropdown dropdown-left">
       <label tabindex="0" class="btn btn-ghost md:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -16,20 +17,24 @@ import { t } from "i18next";
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M4 6h16M4 12h8m-8 6h16"></path></svg>
+            d="M4 6h16M4 12h8m-8 6h16"></path></svg
+        >
       </label>
       <ul
         tabindex="0"
         class="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 bg-base-100 shadow"
       >
         <li class="text-xl font-bold">{t("site.nabi")}</li>
-        <li><a rel="prefetch" href="./cemetery">{t("site.cemetery")}</a></li>
-        <li><a href="./about">{t("site.about")}</a></li>
-        <li><a href="./synagogue">{t("site.synagogue")}</a></li>
-        <li><a href="./hara">{t("site.hara")}</a></li>
-        <li><a href="./sacred-sites">{t("site.sacred")}</a></li>
         <li>
-          <a href="/public/documents/Polity - The Jews of Saida.pdf"
+          <a rel="prefetch" href={localizePath("./cemetery")}
+            >{t("site.cemetery")}</a>
+        </li>
+        <li><a href={localizePath("./about")}>{t("site.about")}</a></li>
+        <li><a href={localizePath("./synagogue")}>{t("site.synagogue")}</a></li>
+        <li><a href={localizePath("./hara")}>{t("site.hara")}</a></li>
+        <li><a href={localizePath("./sacred-sites")}>{t("site.sacred")}</a></li>
+        <li>
+          <a href="./documents/Polity - The Jews of Saida.pdf"
             >{t("site.jews")} (🇫🇷)</a
           >
         </li>
@@ -38,23 +43,30 @@ import { t } from "i18next";
 
     <div class="hidden md:contents">
       <ul class="menu menu-horizontal mx-auto text-sm sm:text-base md:gap-x-10">
-        <li><a rel="prefetch" href="./cemetery">{t("site.cemetery")}</a></li>
+        <li>
+          <a rel="prefetch" href={localizePath("./cemetery")}
+            >{t("site.cemetery")}</a>
+        </li>
         <li>
           <details>
             <summary> {t("site.jews")}</summary>
             <ul>
-              <li><a href="./synagogue">{t("site.synagogue")}</a></li>
-              <li><a href="./hara">{t("site.hara")}</a></li>
-              <li><a href="./sacred-sites">{t("site.sacred")}</a></li>
               <li>
-                <a href="/public/documents/Polity - The Jews of Saida.pdf"
+                <a href={localizePath("./synagogue")}>{t("site.synagogue")}</a>
+              </li>
+              <li><a href={localizePath("./hara")}>{t("site.hara")}</a></li>
+              <li>
+                <a href={localizePath("./sacred-sites")}>{t("site.sacred")}</a>
+              </li>
+              <li>
+                <a href="./documents/Polity - The Jews of Saida.pdf"
                   >{t("site.jews")} (🇫🇷)</a
                 >
               </li>
             </ul>
           </details>
         </li>
-        <li><a href="./about">{t("site.about")}</a></li>
+        <li><a href={localizePath("./about")}>{t("site.about")}</a></li>
       </ul>
     </div>
   </div>
