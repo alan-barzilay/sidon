@@ -1,6 +1,6 @@
 import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
-import { create_carousel } from './carousel.js';
+import { create_carousel, parse_index } from './carousel.js';
 
 
 export async function create_tooltip(id, url){
@@ -26,23 +26,3 @@ export async function create_tooltip(id, url){
     });
 }
 
-async function parse_index(id){
-
-        let response = await fetch(`by_tomb_id/${id}/index.html`);
-        if (!(response.status === 200)) {
-            console.log(`id: ${id} returned with http status: ${response.status} `);
-            return null }
-        const parser = new DOMParser();
-        const htmlDoc = parser.parseFromString(await response.text(), 'text/html');
-        let elements = htmlDoc.getElementsByTagName('a');
-        const regex1 = RegExp(/\.(jpe?g|png|avif|gif)$/);
-        let img_srcs = [];
-        let index;
-        for (let x of elements) {
-            if (regex1.test(x.href)) {
-                index = x.href.lastIndexOf("/");
-                img_srcs.push(x.href.slice(0, index+1) + "by_tomb_id/" + id + x.href.slice(index) )
-            }
-        }
-        return img_srcs;
-}
