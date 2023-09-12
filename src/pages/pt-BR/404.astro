@@ -1,0 +1,13 @@
+---
+import { t, changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+
+changeLanguage("pt-BR");
+---
+
+<Layout title={"404" + t("site.404")}>
+  <div class="mx-auto text-center">
+    <h1 class="text-9xl font-black">404</h1>
+    <h2 class="mt-10 text-6xl">{t("site.404")}</h2>
+  </div>
+</Layout>

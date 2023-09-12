@@ -9,7 +9,7 @@ changeLanguage("pt-BR");
 const url = Astro.url.pathname;
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={t("cemetery.title")}>
   <h1 class="text-center text-2xl font-bold">{t("cemetery.h1")}</h1>
 
   <p>{t("cemetery.body1")}</p>
@@ -55,9 +55,12 @@ const url = Astro.url.pathname;
     <div class="flex gap-4">
       <select class="select select-bordered w-full max-w-xs" id="filter-field">
         <option value="" disabled selected>Select a column</option>
-        <option value="age">age</option>
+        <option value="id">Index</option>
+        <option value="tomb_id">Tomb Code</option>
+        <option value="family_name">Family Name</option>
         <option value="name">Name</option>
-        <option value="gender">Gender</option>
+        <option value="father_name">Father Name</option>
+        <option value="death_date">Date of Death</option>
       </select>
 
       <input
@@ -70,7 +73,7 @@ const url = Astro.url.pathname;
       <button class="btn btn-outline" id="filter-clear">Clear</button>
     </div>
 
-    <div class="w-3/6" id="example-table"></div>
+    <div class="w-3/6" id="cemetery-table"></div>
   </div>
 
   <script src="../../js/table.js"></script>
