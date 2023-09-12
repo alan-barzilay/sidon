@@ -57,33 +57,22 @@ changeLanguage("pt-BR");
     <div
       class="mt-6 flex flex-col flex-wrap items-center justify-center gap-6 lg:flex-row"
     >
-      <button
-        onclick="location.href = './synagogue'"
-        type="button"
+      <a
+        href={localizePath("./synagogue")}
         class="btn btn-outline btn-wide h-64 rounded-3xl text-xl hover:bg-transparent hover:bg-[url('/public/jews.avif')] hover:bg-cover hover:bg-center hover:bg-no-repeat hover:text-transparent"
-        >{t("site.jews")}</button
+        >{t("site.jews")}</a
       >
 
-      <!-- <button
-        onclick="location.href = './cemetery'"
-        type="button"
+      <a
+        href={localizePath("./cemetery")}
         class="btn btn-outline h-64 w-[18rem] rounded-3xl text-3xl hover:bg-transparent hover:bg-[url('/public/cemiterio.avif')] hover:bg-cover hover:bg-center hover:bg-no-repeat hover:text-transparent sm:h-80 sm:w-[24rem]"
-        >{t("site.cemetery")}</button
-      > -->
-
-      <button>
-        <a
-          href="./cemetery"
-          class="btn btn-outline h-64 w-[18rem] rounded-3xl text-3xl hover:bg-transparent hover:bg-[url('/public/cemiterio.avif')] hover:bg-cover hover:bg-center hover:bg-no-repeat hover:text-transparent sm:h-80 sm:w-[24rem]"
-          >{t("site.cemetery")}</a
-        ></button
+        >{t("site.cemetery")}</a
       >
 
-      <button
-        onclick="location.href = './about'"
-        type="button"
-        class="btn btn-outline btn-wide h-64 rounded-3xl text-xl hover:bg-transparent hover:bg-[url('/public/about_us.avif')] hover:bg-cover hover:bg-center hover:bg-no-repeat hover:text-transparent"
-        >{t("site.about")}</button
+      <a
+        href={localizePath("./about")}
+        class="btn btn-outline btn-wide h-64 rounded-3xl text-xl hover:bg-transparent hover:bg-[url('/public/jews.avif')] hover:bg-cover hover:bg-center hover:bg-no-repeat hover:text-transparent"
+        >{t("site.about")}</a
       >
     </div>
   </div>
