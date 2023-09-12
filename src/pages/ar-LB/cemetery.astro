@@ -5,6 +5,8 @@ import { t, changeLanguage } from "i18next";
 import "../../assets/tabulator_modern.css";
 
 changeLanguage("ar-LB");
+
+const url = Astro.url.pathname;
 ---
 
 <Layout title="Welcome to Astro.">
@@ -39,9 +41,9 @@ changeLanguage("ar-LB");
     // for (let i=1; i<=26 ; i++){
     //     ids.push(`EN${i}`)
     // }
-
+    const url = window.location.href;
     for await (const id of ids) {
-      await create_tooltip(id);
+      await create_tooltip(id, url);
     }
   </script>
 
