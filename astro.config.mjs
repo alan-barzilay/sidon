@@ -6,6 +6,5 @@ import prefetch from "@astrojs/prefetch";
 
 export default defineConfig({
   integrations: [tailwind(), astroI18next(), prefetch()],
-  site: 'https://alan-barzilay.github.io',
-  base: 'sidon/',
+  site: 'https://nabisaydoun.org/',
 });
