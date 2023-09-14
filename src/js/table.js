@@ -11,13 +11,13 @@ function updateFilter(){
 }
 
 //create row popup contents
-let rowPopupFormatter = function (e, row, onRendered) {
+async function rowPopupFormatter (e, row, onRendered) {
     let data = row.getData();
     if (data.has_photo == false) {
         return ""
     }
-
-    let contents = create_carousel(parse_index(data.tomb_id), window.location.href);
+    let imgs = await parse_index(data.tomb_id);
+    let contents = create_carousel(imgs , window.location.href);
     let container = document.createElement("div");
     container.innerHTML = contents;
 
