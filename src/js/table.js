@@ -11,19 +11,16 @@ function updateFilter(){
 }
 
 //create row popup contents
-async function rowPopupFormatter (e, row, onRendered) {
+function rowPopupFormatter (e, row, onRendered) {
     let data = row.getData();
-    if (data.has_photo == false) {
-        return ""
-    }
-    let imgs = await parse_index(data.tomb_id);
-    let contents = create_carousel(imgs , window.location.href);
     let container = document.createElement("div");
-    container.innerHTML = contents;
+    data.has_photo == false
+        ? container.innerHTML = "No photo available"
+        : container.innerHTML = `<img src="${window.location.href.hostname + "/sidon" + "/tombs_small_single" + data.tomb_id}"
+                                 class="mx-auto object-contain max-w-96 h-auto" />`
 
     return container;
 };
-
 //create Tabulator on DOM element with id "example-table"
 let table = new Tabulator("#cemetery-table", {
     height:505, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
