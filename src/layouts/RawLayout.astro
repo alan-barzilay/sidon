@@ -5,6 +5,7 @@ interface Props {
 const { title } = Astro.props;
 import i18next from "i18next";
 import { ViewTransitions } from "astro:transitions";
+import { HeadHrefLangs } from "astro-i18next/components";
 ---
 
 <!doctype html>
@@ -16,6 +17,7 @@ import { ViewTransitions } from "astro:transitions";
     <title>{title}</title>
     <base href={Astro.site + import.meta.env.BASE_URL.slice(1)} />
     <ViewTransitions />
+    <HeadHrefLangs />
   </head>
   <body
     class="debug-screens text-justify
