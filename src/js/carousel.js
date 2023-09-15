@@ -7,7 +7,7 @@ export function create_carousel(imgs, url) {
 function create_carousel_item(img_src, slide_id, N, url){
 	return `
 		<div id=slide${slide_id} class="carousel-item relative w-full">
-		<img src="${img_src}" loading="lazy" class="mx-auto object-contain max-w-96 h-auto" />
+		<img src="${img_src}" loading="lazy" class="mx-auto object-contain max-w-96 h-auto bg-auto bg-no-repeat bg-center bg-[url('/spinner.svg')]" />
 		<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
 			<a href=${url}#slide${ slide_id == 0 ? N-1 : slide_id-1 } class="btn btn-circle">❮</a>
 			<a href=${url}#slide${ slide_id == N-1 ? 0 : slide_id+1 } class="btn btn-circle">❯</a>
@@ -17,7 +17,6 @@ function create_carousel_item(img_src, slide_id, N, url){
 }
 
 export async function parse_index(id){
-
         let response = await fetch(`by_tomb_id/${id}/index.html`);
         if (!(response.status === 200)) {
             console.log(`id: ${id} returned with http status: ${response.status} `);

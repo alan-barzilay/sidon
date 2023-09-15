@@ -1,5 +1,4 @@
 import { TabulatorFull as Tabulator, PopupModule } from 'tabulator-tables';
-import { create_carousel, parse_index } from "./carousel.js";
 import table_cemetery from "../assets/cemetery_table.json" assert { type: 'json' };;
 
 //Trigger setFilter function with correct parameters
@@ -16,8 +15,8 @@ function rowPopupFormatter (e, row, onRendered) {
     let container = document.createElement("div");
     data.has_photo == false
         ? container.innerHTML = "No photo available"
-        : container.innerHTML = `<img src="${window.location.href.hostname + "/sidon" + "/tombs_small_single" + data.tomb_id}"
-                                 class="mx-auto object-contain max-w-96 h-auto" />`
+        : container.innerHTML = `<img src="${window.location.href.hostname + "/tombs_small_single" + data.tomb_id}"
+                                 class="mx-auto object-contain max-w-96 h-auto bg-auto bg-no-repeat bg-center bg-[url('/spinner.svg')]" />`
 
     return container;
 };
