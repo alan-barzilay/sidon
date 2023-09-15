@@ -26,24 +26,10 @@ jobs:
       - run: bun install
       - run: bunx astro-i18next generate
 
-      - uses: EndBug/add-and-commit@v9
-        with:
-          add: "src/pages/pt-BR src/pages/ar-LB src/pages/fr"
-          # The message for the commit.
-          # Default: 'Commit from GitHub Actions (name of the workflow)'
-          message: "bot made: Generating fr ptBR arLB pages with i18nextastro"
-
       - name: Generate Directory Listings
         uses: jayanta525/github-pages-directory-listing@v3.0.0
         with:
           FOLDER: public #directory to generate index
-
-      - uses: EndBug/add-and-commit@v9
-        with:
-          add: "public"
-          # The message for the commit.
-          # Default: 'Commit from GitHub Actions (name of the workflow)'
-          message: "bot made: Indexing the public folder"
 
       - name: Install, build, and upload your site output
         uses: withastro/action@v0
