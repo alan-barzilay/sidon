@@ -15,7 +15,7 @@ function rowPopupFormatter (e, row, onRendered) {
     let container = document.createElement("div");
     data.has_photo == false
         ? container.innerHTML = "No photo available"
-        : container.innerHTML = `<img src="${window.location.href.hostname + "/tombs_small_single" + data.tomb_id}"
+        : container.innerHTML = `<img src="${window.location.href + "sidon" + "/tombs_small_single/" + data.tomb_id}"
                                  class="mx-auto object-contain max-w-96 h-auto bg-auto bg-no-repeat bg-center bg-[url('/spinner.svg')]" />`
 
     return container;
