@@ -11,9 +11,10 @@ export async function create_tooltip(id, url){
     appendTo: document.body,
     delay: [null, 250], // show default delay and hide 250ms delay
     async onShow(instance) {
-        let imgs = await parse_index(id);
-        let content;
+        let content = loader;
+        instance.setContent(content);
 
+        let imgs = await parse_index(id);
         if(imgs){
             content = create_carousel(imgs, url);
         }
