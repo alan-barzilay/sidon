@@ -27,14 +27,15 @@ import { localizePath } from "astro-i18next";
         <li class="text-xl font-bold">{t("site.nabi")}</li>
         <li>
           <a rel="prefetch" href={localizePath("./cemetery")}
-            >{t("site.cemetery")}</a>
+            >{t("site.cemetery")}</a
+          >
         </li>
         <li><a href={localizePath("./about")}>{t("site.about")}</a></li>
         <li><a href={localizePath("./synagogue")}>{t("site.synagogue")}</a></li>
         <li><a href={localizePath("./hara")}>{t("site.hara")}</a></li>
         <li><a href={localizePath("./sacred-sites")}>{t("site.sacred")}</a></li>
         <li>
-          <a href="./documents/Polity - The Jews of Saida.pdf"
+          <a href="/documents/Polity - The Jews of Saida.pdf"
             >{t("site.jews")} (🇫🇷)</a
           >
         </li>
@@ -45,7 +46,8 @@ import { localizePath } from "astro-i18next";
       <ul class="menu menu-horizontal mx-auto text-sm sm:text-base md:gap-x-10">
         <li>
           <a rel="prefetch" href={localizePath("./cemetery")}
-            >{t("site.cemetery")}</a>
+            >{t("site.cemetery")}</a
+          >
         </li>
         <li>
           <details>
@@ -59,7 +61,7 @@ import { localizePath } from "astro-i18next";
                 <a href={localizePath("./sacred-sites")}>{t("site.sacred")}</a>
               </li>
               <li>
-                <a href="./documents/Polity - The Jews of Saida.pdf"
+                <a href="/documents/Polity - The Jews of Saida.pdf"
                   >{t("site.jews")} (🇫🇷)</a
                 >
               </li>
