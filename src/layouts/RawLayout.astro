@@ -6,6 +6,8 @@ const { title } = Astro.props;
 import i18next from "i18next";
 import { ViewTransitions } from "astro:transitions";
 import { HeadHrefLangs } from "astro-i18next/components";
+// let site;
+// import.meta.env.PROD === true ? (site = Astro.site) : (site = "localhost:4321");
 ---
 
 <!doctype html>
@@ -15,7 +17,7 @@ import { HeadHrefLangs } from "astro-i18next/components";
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
-    <base href={Astro.site + import.meta.env.BASE_URL.slice(1)} />
+    <!-- <base href={site} /> -->
     <ViewTransitions />
     <HeadHrefLangs />
   </head>
