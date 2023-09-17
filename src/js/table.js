@@ -1,4 +1,4 @@
-import { TabulatorFull as Tabulator, PopupModule } from 'tabulator-tables';
+import { TabulatorFull as Tabulator} from 'tabulator-tables';
 import table_cemetery from "../assets/cemetery_table.json" assert { type: 'json' };;
 
 //Trigger setFilter function with correct parameters
@@ -20,15 +20,14 @@ function rowPopupFormatter (e, row, onRendered) {
 
     return container;
 };
-//create Tabulator on DOM element with id "example-table"
+
 let table = new Tabulator("#cemetery-table", {
     height:505, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
     data:table_cemetery, //assign data to table
-    // responsiveLayout:true, // enable responsive layouts
     responsiveLayout: "collapse", // collapse columns that no longer fit on the table into a list under the row
     layout: "fitDataStretch",
-    rowClickPopup: rowPopupFormatter, //add click popup to row
-    columns:[ //Define Table Columns
+    rowClickPopup: rowPopupFormatter,
+    columns:[
         {title:"Id", field:"id", headerHozAlign: "center"},//, frozen:true},
         {title:"Tomb", field:"tomb_id", hozAlign:"left", headerHozAlign: "center", sorter:"string", sorterParams:{alignEmptyValues:"bottom",}},
         {title:"Family Name", field:"family_name", headerHozAlign: "center", sorter:"string", sorterParams:{alignEmptyValues:"bottom",}},
