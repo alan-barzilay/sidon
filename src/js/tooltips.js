@@ -19,7 +19,7 @@ export async function create_tooltip(id, url){
             content = create_carousel(imgs, url);
         }
         else{
-            content = '<img width="128" src="no-picture.svg" alt="Picture not available. Illustration of a crossed off camera">';
+            content = `<img width="128" src="${import.meta.env.SITE}no-picture.svg" alt="Picture not available. Illustration of a crossed off camera">`;
         }
         instance.setContent(content);
     }
