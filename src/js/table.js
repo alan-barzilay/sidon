@@ -16,7 +16,7 @@ function rowPopupFormatter (e, row, onRendered) {
     data.has_photo == false
         ? container.innerHTML = "No photo available"
         : container.innerHTML = `<img src="${import.meta.env.SITE + "tombs_small_single/" + data.tomb_id + ".avif"}"
-                                 class="mx-auto object-contain max-w-md h-auto" />`
+                                 class="mx-auto object-contain h-96" />`
 
     return container;
 };
