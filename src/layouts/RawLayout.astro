@@ -4,6 +4,8 @@ interface Props {
 }
 const { title } = Astro.props;
 import i18next from "i18next";
+import { t } from "i18next";
+
 import { ViewTransitions } from "astro:transitions";
 import { HeadHrefLangs } from "astro-i18next/components";
 
@@ -15,7 +17,28 @@ import { HeadHrefLangs } from "astro-i18next/components";
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🪦</text></svg>">
+    <!-- Primary Meta Tags -->
     <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={t("index.body1")} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.site} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={t("index.body1")} />
+    <meta property="og:image" content=`${Astro.site}thumbnail.jpeg` />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.site} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={t("index.body1")} />
+    <meta property="twitter:image" content=`${Astro.site}thumbnail.jpeg` />
+
+<!-- Meta Tags Generated with https://metatags.io -->
     <ViewTransitions />
     <HeadHrefLangs />
     <link rel="sitemap" href="/sitemap-index.xml" />
