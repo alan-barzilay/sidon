@@ -9,7 +9,7 @@ export async function create_tooltip(id, url){
     interactive: true,
     maxWidth: 350,
     appendTo: document.body,
-    delay: [null, 250], // show default delay and hide 250ms delay
+    delay: [100, 250], // show 100ms delay and hide 250ms delay
     async onShow(instance) {
         let content = loader;
         instance.setContent(content);
