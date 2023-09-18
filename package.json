@@ -17,6 +17,7 @@
     "@tailwindcss/container-queries": "^0.1.1",
     "astro": "^3.0.10",
     "astro-i18next": "^1.0.0-beta.21",
+    "astro-robots-txt": "^1.0.0",
     "sharp": "^0.32.6",
     "tabulator-tables": "^5.5.1",
     "tailwindcss": "^3.3.3",
