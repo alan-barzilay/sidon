@@ -19,4 +19,7 @@ pnpm-debug.log*
 
 .vscode/
 saida_stuff/
+src/pages/ar-LB/
+src/pages/fr/
+src/pages/pt-BR/
 public/by_tomb_id/X/
