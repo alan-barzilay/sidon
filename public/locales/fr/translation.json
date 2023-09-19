@@ -10,6 +10,13 @@
     "404":" page non trouvée"
   },
 
+  "map":{
+    "title":"Disposition du cimetière",
+    "zoom":"Zoom",
+    "wheel":"Molette",
+    "pan":"Déplacer: Cliquer et faire glisser",
+    "reset":"Reset"
+  },
   "hara": {
     "title":"Le quartier juif - Nabi Saydoun",
     "h1": "Le quartier juif",

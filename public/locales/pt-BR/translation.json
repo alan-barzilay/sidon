@@ -10,6 +10,14 @@
     "404":" pagina não encontrada"
   },
 
+  "map":{
+    "title":"Layout do Cemitério",
+    "zoom":"Zoom",
+    "wheel":"Roda do Mouse",
+    "pan":"Deslocar: Clique e Arraste",
+    "reset":"Reset"
+  },
+
   "hara": {
     "title":"Hara",
     "h1":"Hara",

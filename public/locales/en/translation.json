@@ -10,6 +10,14 @@
     "404":" page not found"
   },
 
+  "map":{
+    "title":"Cemetery Layout",
+    "zoom":"Zoom",
+    "wheel":"Scroll Wheel",
+    "pan":"Pan: Click and Drag",
+    "reset":"Reset"
+  },
+
   "hara": {
     "title":"Hara - Nabi Saydoun",
     "h1": "Hara",
