@@ -38,6 +38,38 @@ let table = new Tabulator("#cemetery-table", {
         {title: "Gender", field: "gender", hozAlign: "center", headerHozAlign: "center", sorter:"string", sorterParams:{alignEmptyValues:"bottom",}},
         // {title:"On Map?", field: "on_svg", hozAlign: "center",formatter:"tickCross", formatterParams:{ } },
     ],
+    langs:{
+        "fr-fr":{
+            "columns":{
+                "tomb_id":"Tombe",
+                "family_name":"Nom de famille",
+                "name":"Prénom",
+                "father_name":"Nom du père",
+                "death_date":"Date de décès",
+                "gender":"Genre",
+            },
+        },
+        // "ar-lb":{
+        //     "columns":{
+        //         "tomb_id":"",
+        //         "family_name":"",
+        //         "name":"",
+        //         "father_name":"",
+        //         "death_date":"",
+        //         "gender":"",
+        //     },
+        // },
+        "pt-br":{
+            "columns":{
+                "tomb_id":"Túmulo",
+                "family_name":"Sobrenome",
+                "name":"Nome",
+                "father_name":"Nome do Pai",
+                "death_date":"Data da Morte",
+                "gender":"Gênero",
+            },
+        }
+    }
 });
 
 

@@ -18,6 +18,20 @@
     "reset":"Reset"
   },
 
+  "table":{
+    "select":"Selecione uma coluna",
+    "index":"Id",
+    "tomb_code":"Código do túmulo",
+    "family_name":"Sobrenome",
+    "name":"Nome",
+    "father_name":"Nome do Pai",
+    "death":"Data da Morte",
+    "clear":"Limpar",
+    "tomb":"Túmulo",
+    "gender":"Gênero",
+    "no_photo":"Foto indisponível"
+  },
+
   "hara": {
     "title":"Hara",
     "h1":"Hara",

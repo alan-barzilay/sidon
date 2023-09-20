@@ -18,6 +18,20 @@
     "reset":"Reset"
   },
 
+  "table":{
+    "select":"Select a column",
+    "index":"Id",
+    "tomb_code":"Tomb Code",
+    "family_name":"Family Name",
+    "name":"Name",
+    "father_name":"Father Name",
+    "death":"Date of Death",
+    "clear":"Clear",
+    "tomb":"Tomb",
+    "gender":"Gender",
+    "no_photo":"No photo available"
+  },
+
   "hara": {
     "title":"Hara - Nabi Saydoun",
     "h1": "Hara",

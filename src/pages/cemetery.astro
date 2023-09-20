@@ -51,13 +51,13 @@ changeLanguage("en");
 
   <div class="mx-auto mt-11 flex justify-center gap-4">
     <select class="select select-bordered w-full max-w-xs" id="filter-field">
-      <option value="" disabled selected>Select a column</option>
-      <option value="id">Index</option>
-      <option value="tomb_id">Tomb Code</option>
-      <option value="family_name">Family Name</option>
-      <option value="name">Name</option>
-      <option value="father_name">Father Name</option>
-      <option value="death_date">Date of Death</option>
+      <option value="" disabled selected>{t("table.select")}</option>
+      <option value="id">{t("table.index")}</option>
+      <option value="tomb_id">{t("table.tomb_code")}</option>
+      <option value="family_name">{t("table.family_name")}</option>
+      <option value="name">{t("table.name")}</option>
+      <option value="father_name">{t("table.father_name")}</option>
+      <option value="death_date">{t("table.death")}</option>
     </select>
 
     <input
@@ -67,7 +67,7 @@ changeLanguage("en");
       class="input input-bordered w-full max-w-xs"
     />
 
-    <button class="btn btn-outline" id="filter-clear">Clear</button>
+    <button class="btn btn-outline" id="filter-clear">{t("table.clear")}</button>
   </div>
 
   <div class="mx-auto mt-6 max-w-4xl" id="cemetery-table"></div>
