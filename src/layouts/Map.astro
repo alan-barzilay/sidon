@@ -3,32 +3,36 @@ import SvgCemetery from "./SvgCemetery.astro";
 import { t, changeLanguage } from "i18next";
 ---
 
-<script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
 <script>
-    import Panzoom from '@panzoom/panzoom'
-    const elem = document.getElementById("svg");
-    const panzoom = Panzoom(elem)
+  import Panzoom from "@panzoom/panzoom";
+  const elem = document.getElementById("svg");
+  const panzoom = Panzoom(elem);
 
-    elem.addEventListener('wheel', function(event) {
-    if (!event.shiftKey) return
-    panzoom.zoomWithWheel(event)
-    })
-    let resetButton = document.getElementById("reset_svg");
-    resetButton.addEventListener('click', panzoom.reset)
+  elem.addEventListener("wheel", function (event) {
+    if (!event.shiftKey) return;
+    panzoom.zoomWithWheel(event);
+  });
+  let resetButton = document.getElementById("reset_svg");
+  resetButton.addEventListener("click", panzoom.reset);
 </script>
 
+<div class="my-12 flex flex-col justify-center gap-4">
+  <p class="text-xl font-medium">{t("map.title")}</p>
 
-<div class="flex flex-col justify-center gap-4 my-12">
-
-    <p class="text-xl font-medium">{t("map.title")}</p>
-
-    <div class="relative border border-zinc-700 overflow-hidden mx-auto w-full lg:w-fit h-[66svh] [&_div]:hover:opacity-0">
-        <div class="absolute bottom-0 left-0 rounded-md border border-black m-2 p-2 transition-opacity opacity-0 lg:opacity-100 backdrop-blur-sm z-50">
-            <p class="inline-flex items-center gap-1">{t("map.zoom")}: <kbd class="kbd kbd-sm">Shift</kbd> + {t("map.wheel")}</p>
-            <p>{t("map.pan")} </p>
-        </div>
-        <SvgCemetery />
+  <div
+    class="relative mx-auto h-[66svh] w-full overflow-hidden border border-zinc-700 lg:w-fit [&_div]:hover:opacity-0"
+  >
+    <div
+      class="absolute bottom-0 left-0 z-50 m-2 rounded-md border border-black p-2 opacity-0 backdrop-blur-sm transition-opacity lg:opacity-100"
+    >
+      <p class="inline-flex items-center gap-1">
+        {t("map.zoom")}: <kbd class="kbd kbd-sm">Shift</kbd> + {t("map.wheel")}
+      </p>
+      <p>{t("map.pan")}</p>
     </div>
-    <button class="btn btn-outline mx-auto" id="reset_svg">{t("map.reset")}</button>
-
+    <SvgCemetery />
+  </div>
+  <button class="btn btn-outline mx-auto" id="reset_svg"
+    >{t("map.reset")}</button
+  >
 </div>
