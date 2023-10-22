@@ -1,5 +1,6 @@
 import { TabulatorFull as Tabulator} from 'tabulator-tables';
 import table_cemetery from "../assets/cemetery_table.json" assert { type: 'json' };;
+document.addEventListener("astro:page-load", async () => {
 
 //Trigger setFilter function with correct parameters
 function updateFilter(){
@@ -85,4 +86,6 @@ document.getElementById("filter-clear").addEventListener("click", function(){
     fieldEl.value = "";
     valueEl.value = "";
     table.clearFilter();
+});
+
 });

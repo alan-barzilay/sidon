@@ -19,29 +19,31 @@ changeLanguage("en");
 
   <script>
     import { create_tooltip } from "../js/tooltips.js";
-    let ids = ["CN1"];
-    for (let i = 1; i <= 42; i++) {
-      ids.push(`A${i}`);
-    }
-    for (let i = 1; i <= 65; i++) {
-      ids.push(`B${i}`);
-    }
-    for (let i = 1; i <= 90; i++) {
-      ids.push(`C${i}`);
-    }
-    for (let i = 1; i <= 48; i++) {
-      ids.push(`D${i}`);
-    }
-    for (let i = 1; i <= 68; i++) {
-      ids.push(`E${i}`);
-    }
-    // for (let i=1; i<=26 ; i++){
-    //     ids.push(`EN${i}`)
-    // }
-    const url = window.location.href;
-    for await (const id of ids) {
-      await create_tooltip(id, url);
-    }
+    document.addEventListener("astro:page-load", async () => {
+      let ids = ["CN1"];
+      for (let i = 1; i <= 42; i++) {
+        ids.push(`A${i}`);
+      }
+      for (let i = 1; i <= 65; i++) {
+        ids.push(`B${i}`);
+      }
+      for (let i = 1; i <= 90; i++) {
+        ids.push(`C${i}`);
+      }
+      for (let i = 1; i <= 48; i++) {
+        ids.push(`D${i}`);
+      }
+      for (let i = 1; i <= 68; i++) {
+        ids.push(`E${i}`);
+      }
+      // for (let i=1; i<=26 ; i++){
+      //     ids.push(`EN${i}`)
+      // }
+      const url = window.location.href;
+      for await (const id of ids) {
+        await create_tooltip(id, url);
+      }
+    });
   </script>
 
   <p>{t("cemetery.body5")}</p>

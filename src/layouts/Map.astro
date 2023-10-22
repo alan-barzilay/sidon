@@ -5,15 +5,17 @@ import { t, changeLanguage } from "i18next";
 
 <script>
   import Panzoom from "@panzoom/panzoom";
-  const elem = document.getElementById("svg");
-  const panzoom = Panzoom(elem);
+  document.addEventListener("astro:page-load", () => {
+    const elem = document.getElementById("svg");
+    const panzoom = Panzoom(elem);
 
-  elem.addEventListener("wheel", function (event) {
-    if (!event.shiftKey) return;
-    panzoom.zoomWithWheel(event);
+    elem.addEventListener("wheel", function (event) {
+      if (!event.shiftKey) return;
+      panzoom.zoomWithWheel(event);
+    });
+    let resetButton = document.getElementById("reset_svg");
+    resetButton.addEventListener("click", panzoom.reset);
   });
-  let resetButton = document.getElementById("reset_svg");
-  resetButton.addEventListener("click", panzoom.reset);
 </script>
 
 <div class="my-12 flex flex-col justify-center gap-4">
