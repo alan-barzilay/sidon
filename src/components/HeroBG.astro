@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import hero_bg from "../assets/hero_bg_full.png";
+---
+
+<style>
+#div_img {
+    box-shadow:
+    17cqi -17cqi 30px -18cqi rgba(0, 0, 0, 0.5),
+    -17cqi -17cqi 30px -18cqi rgba(0, 0, 0, 0.5);
+}
+</style>
+
+<Image
+    id="div_img"
+    src={hero_bg}
+    widths={
+        [340,
+        500,
+        640, 
+        768,
+        1024,
+        1280,
+        hero_bg.width]
+        }
+    format="avif"
+    alt=""
+    class="mx-auto h-[120dvh] object-cover sm:h-auto"
+/>

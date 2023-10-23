@@ -6,31 +6,16 @@ import Navbar from "../layouts/Navbar.astro";
 import Footer from "../layouts/Footer.astro";
 import { t, changeLanguage } from "i18next";
 import { localizePath } from "astro-i18next";
-import { Image } from "astro:assets";
-import hero_bg from "../assets/hero_bg_full.png";
+import HeroBG from "../components/HeroBG.astro";
 
 changeLanguage("en");
 ---
 
 <RawLayout title={t("index.title")}>
-  <style>
-    #div_img {
-      box-shadow:
-        17cqi -17cqi 30px -18cqi rgba(0, 0, 0, 0.5),
-        -17cqi -17cqi 30px -18cqi rgba(0, 0, 0, 0.5);
-    }
-  </style>
-
   <div class="mx-auto max-w-[90rem] min-[1441px]:mt-6">
     <div class="relative">
       <div class="@container">
-        <Image
-          id="div_img"
-          src={hero_bg}
-          format="avif"
-          alt=""
-          class="mx-auto h-[120dvh] object-cover sm:h-auto"
-        />
+          <HeroBG />
       </div>
 
       <header>
