@@ -4,10 +4,10 @@ import { t, changeLanguage } from "i18next";
 ---
 
 <script>
-  const panzoom = await import("../js/panzoom.js");
-  panzoom.main();
+  import { set_panzoom } from "../js/panzoom.js";
+  set_panzoom();
   document.addEventListener("astro:page-load", () => {
-    panzoom.main();
+    set_panzoom();
   });
 </script>
 

@@ -3,9 +3,9 @@
 ---
 
 <script>
-  const tooltip = await import("../js/tooltips.js");
-  tooltip.main();
+  import { create_tooltips } from "../js/tooltips.js";
+  create_tooltips();
   document.addEventListener("astro:page-load", async () => {
-    tooltip.main();
+    create_tooltips();
   });
 </script>

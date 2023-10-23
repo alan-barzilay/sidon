@@ -3,7 +3,7 @@ import 'tippy.js/dist/tippy.css';
 import { create_carousel, parse_index } from './carousel.js';
 
 const loader = `<p>Loading...</p>`
-async function create(id, url){
+async function create_tooltip(id, url){
     return tippy(`#${id}`, {
     content: loader,
     allowHTML: true,
@@ -26,7 +26,7 @@ async function create(id, url){
     }
     });
 }
-export async function main() {
+export async function create_tooltips() {
     let ids = ["CN1"];
     for (let i = 1; i <= 42; i++) {
         ids.push(`A${i}`);
@@ -48,6 +48,6 @@ export async function main() {
     // }
     const url = window.location.href;
     for await (const id of ids) {
-        await create(id, url);
+        await create_tooltip(id, url);
     }
 };

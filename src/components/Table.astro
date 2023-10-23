@@ -7,9 +7,9 @@ const lang = i18next.language;
 <astro-language id="lang" data-lang={lang}></astro-language>
 
 <script>
-  const table = await import("../js/table.js");
-  table.main();
+  import { create_table } from "../js/table.js";
+  create_table();
   document.addEventListener("astro:page-load", () => {
-    table.main();
+    create_table();
   });
 </script>

@@ -11,7 +11,7 @@ class AstroLang extends HTMLElement {
 }
 customElements.define("astro-language", AstroLang);
 
-export function main() {
+export function create_table() {
 
     //Trigger setFilter function with correct parameters
     function updateFilter() {

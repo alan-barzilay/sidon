@@ -1,7 +1,6 @@
-
 import Panzoom from "@panzoom/panzoom";
 
-export function main() {
+export function set_panzoom() {
     const elem = document.getElementById("svg");
     const panzoom = Panzoom(elem);
 
