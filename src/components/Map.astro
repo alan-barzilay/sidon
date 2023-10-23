@@ -5,6 +5,7 @@ import { t, changeLanguage } from "i18next";
 
 <script>
   const panzoom = await import("../js/panzoom.js");
+  panzoom.main();
   document.addEventListener("astro:page-load", () => {
     panzoom.main();
   });

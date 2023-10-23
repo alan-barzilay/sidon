@@ -8,6 +8,7 @@ const lang = i18next.language;
 
 <script>
   const table = await import("../js/table.js");
+  table.main();
   document.addEventListener("astro:page-load", () => {
     table.main();
   });

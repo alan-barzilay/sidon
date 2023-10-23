@@ -2,7 +2,8 @@ import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
 import { create_carousel, parse_index } from './carousel.js';
 
-export async function create(id, url){
+const loader = `<p>Loading...</p>`
+async function create(id, url){
     return tippy(`#${id}`, {
     content: loader,
     allowHTML: true,
@@ -25,5 +26,28 @@ export async function create(id, url){
     }
     });
 }
-
-const loader = `<p>Loading...</p>`
+export async function main() {
+    let ids = ["CN1"];
+    for (let i = 1; i <= 42; i++) {
+        ids.push(`A${i}`);
+    }
+    for (let i = 1; i <= 65; i++) {
+        ids.push(`B${i}`);
+    }
+    for (let i = 1; i <= 90; i++) {
+        ids.push(`C${i}`);
+    }
+    for (let i = 1; i <= 48; i++) {
+        ids.push(`D${i}`);
+    }
+    for (let i = 1; i <= 68; i++) {
+        ids.push(`E${i}`);
+    }
+    // for (let i=1; i<=26 ; i++){
+    //     ids.push(`EN${i}`)
+    // }
+    const url = window.location.href;
+    for await (const id of ids) {
+        await create(id, url);
+    }
+};
