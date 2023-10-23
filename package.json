@@ -15,7 +15,7 @@
     "@astrojs/tailwind": "^5.0.0",
     "@panzoom/panzoom": "^4.5.1",
     "@tailwindcss/container-queries": "^0.1.1",
-    "astro": "^3.0.10",
+    "astro": "^3.3.3",
     "astro-i18next": "^1.0.0-beta.21",
     "astro-robots-txt": "^1.0.0",
     "sharp": "^0.32.6",
