@@ -4,17 +4,9 @@ import { t, changeLanguage } from "i18next";
 ---
 
 <script>
-  import Panzoom from "@panzoom/panzoom";
+  const panzoom = await import("../js/panzoom.js");
   document.addEventListener("astro:page-load", () => {
-    const elem = document.getElementById("svg");
-    const panzoom = Panzoom(elem);
-
-    elem.addEventListener("wheel", function (event) {
-      if (!event.shiftKey) return;
-      panzoom.zoomWithWheel(event);
-    });
-    let resetButton = document.getElementById("reset_svg");
-    resetButton.addEventListener("click", panzoom.reset);
+    panzoom.main();
   });
 </script>
 

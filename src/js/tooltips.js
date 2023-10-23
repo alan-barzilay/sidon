@@ -2,7 +2,7 @@ import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
 import { create_carousel, parse_index } from './carousel.js';
 
-export async function create_tooltip(id, url){
+export async function create(id, url){
     return tippy(`#${id}`, {
     content: loader,
     allowHTML: true,

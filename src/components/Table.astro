@@ -1,0 +1,14 @@
+---
+import i18next from "i18next";
+const lang = i18next.language;
+---
+
+<!-- Store the lang value as a data attribute. -->
+<astro-language id="lang" data-lang={lang}></astro-language>
+
+<script>
+  const table = await import("../js/table.js");
+  document.addEventListener("astro:page-load", () => {
+    table.main();
+  });
+</script>
