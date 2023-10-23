@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Map from "../layouts/Map.astro";
+import Table from "../layouts/Table.astro";
 import { t, changeLanguage } from "i18next";
 import "../assets/tabulator_modern.css";
 
@@ -74,5 +75,5 @@ changeLanguage("en");
 
   <div class="mx-auto mt-6 max-w-4xl" id="cemetery-table"></div>
 
-  <script src="../js/table.js"></script>
+  <Table />
 </Layout>
