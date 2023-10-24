@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	// purge: [  ],
@@ -8,7 +10,7 @@ module.exports = {
 				'bege': '#F6ECDA',
 				'base-100': '#F6ECDA'},
 			fontFamily: {
-				sans: ['Raleway', 'sans-serif'],
+				sans: ['Raleway', 'Raleway Variable', 'sans-serif'],
 			  },
 		},
 	},
