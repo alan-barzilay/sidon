@@ -7,7 +7,7 @@ export function set_panzoom() {
     elem.addEventListener("wheel", function (event) {
         if (!event.shiftKey) return;
         panzoom.zoomWithWheel(event);
-    });
+    }, {passive: true});
     let resetButton = document.getElementById("reset_svg");
     resetButton.addEventListener("click", panzoom.reset);
 };
