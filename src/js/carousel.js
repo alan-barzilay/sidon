@@ -1,16 +1,22 @@
-export function create_carousel(imgs, url) {
+export function create_carousel(imgs, url, height="") {
 	const N = imgs.length
-	const items =  imgs.map((img_src, index)=>create_carousel_item(img_src, index, N, url)).join("")
-	return `<div class="carousel rounded-box"> ${items} </div>`
+	const items =  imgs.map((img_src, index)=>create_carousel_item(img_src, index, N, url, height)).join("")
+	return `<div class="carousel "> ${items} </div>`
 }
 
-function create_carousel_item(img_src, slide_id, N, url){
+function create_carousel_item(img_src, slide_id, N, url, height=""){
 	return `
-		<div id=slide${slide_id} class="carousel-item relative w-full">
-		<img src="${img_src}" loading="lazy" class="mx-auto object-contain w-72 sm:w-96 h-auto" />
-		<div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-			<a href=${url}#slide${ slide_id == 0 ? N-1 : slide_id-1 } class="btn btn-circle">❮</a>
-			<a href=${url}#slide${ slide_id == N-1 ? 0 : slide_id+1 } class="btn btn-circle">❯</a>
+		<div id=slide${slide_id} class="carousel-item relative w-full ">
+		<img src="${img_src}" loading="lazy" class="mx-auto z-20 object-contain rounded-box w-72 sm:w-96 ${height}" />
+		<div class="absolute z-10 h-full w-full  ">
+            <div class='flex inset-0 w-full h-full justify-center items-center '> 
+                <p>Loading...</p>
+            </div>
+		</div>
+
+        <div class="absolute z-20 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+			<a href=${url}#slide${ slide_id == 0 ? N-1 : slide_id-1 } class="btn btn-circle ">❮</a>
+			<a href=${url}#slide${ slide_id == N-1 ? 0 : slide_id+1 } class="btn btn-circle ">❯</a>
 		</div>
 		</div>
 `

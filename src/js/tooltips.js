@@ -2,13 +2,14 @@ import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
 import { create_carousel, parse_index } from './carousel.js';
 
-const loader = `<p>Loading...</p>`
+// tippy box padding= 5px on y axis and 9 in x axis
+const loader = `<div class="flex justify-center items-center w-[278px] sm:w-[366px] h-[293px]"><p class="pb-[6px]">Loading...</p></div>`
 async function create_tooltip(id, url){
     return tippy(`#${id}`, {
     content: loader,
     allowHTML: true,
     interactive: true,
-    maxWidth: 350,
+    maxWidth: 384,
     appendTo: document.body,
     delay: [100, 250], // show 100ms delay and hide 250ms delay
     async onShow(instance) {
@@ -17,7 +18,7 @@ async function create_tooltip(id, url){
 
         let imgs = await parse_index(id);
         if(imgs){
-            content = create_carousel(imgs, url);
+            content = create_carousel(imgs, url, "h-72");
         }
         else{
             content = `<img width="128" src="${import.meta.env.SITE}no-picture.svg" alt="Picture not available. Illustration of a crossed off camera">`;
