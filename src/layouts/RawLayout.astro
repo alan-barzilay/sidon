@@ -19,7 +19,10 @@ import "@fontsource-variable/raleway";
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🪦</text></svg>">
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🪦</text></svg>"
+    />
     <!-- Primary Meta Tags -->
     <title>{title}</title>
     <meta name="title" content={title} />
@@ -39,8 +42,7 @@ import "@fontsource-variable/raleway";
     <meta property="twitter:description" content={t("index.body1")} />
     <meta property="twitter:image" content=`${Astro.site}thumbnail.jpeg` />
 
-<!-- Meta Tags Generated with https://metatags.io -->
-    <ViewTransitions />
+    <!-- Meta Tags Generated with https://metatags.io -->
     <HeadHrefLangs />
     <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
@@ -49,7 +51,9 @@ import "@fontsource-variable/raleway";
 	text-lg [&_h1]:mt-10 [&_p]:mx-auto [&_p]:mt-3 [&_p]:max-w-[80ch]
 	[&_p]:leading-6"
   >
-    <script>0</script>
+    <script>
+      0;
+    </script>
     <main>
       <slot />
     </main>
