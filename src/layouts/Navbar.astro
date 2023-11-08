@@ -26,14 +26,14 @@ import { localizePath } from "astro-i18next";
       >
         <li class="text-xl font-bold">{t("site.nabi")}</li>
         <li>
-          <a rel="prefetch" href={localizePath("./cemetery")}
+          <a rel="prefetch" href={localizePath("cemetery")}
             >{t("site.cemetery")}</a
           >
         </li>
-        <li><a href={localizePath("./about")}>{t("site.about")}</a></li>
-        <li><a href={localizePath("./synagogue")}>{t("site.synagogue")}</a></li>
-        <li><a href={localizePath("./hara")}>{t("site.hara")}</a></li>
-        <li><a href={localizePath("./sacred-sites")}>{t("site.sacred")}</a></li>
+        <li><a href={localizePath("about")}>{t("site.about")}</a></li>
+        <li><a href={localizePath("synagogue")}>{t("site.synagogue")}</a></li>
+        <li><a href={localizePath("hara")}>{t("site.hara")}</a></li>
+        <li><a href={localizePath("sacred-sites")}>{t("site.sacred")}</a></li>
         <li>
           <a href="/documents/Polity - The Jews of Saida.pdf"
             >{t("site.jews")} (🇫🇷)</a
@@ -45,7 +45,7 @@ import { localizePath } from "astro-i18next";
     <div class="hidden md:contents">
       <ul class="menu menu-horizontal mx-auto text-sm sm:text-base md:gap-x-10">
         <li>
-          <a rel="prefetch" href={localizePath("./cemetery")}
+          <a rel="prefetch" href={localizePath("cemetery")}
             >{t("site.cemetery")}</a
           >
         </li>
@@ -54,11 +54,11 @@ import { localizePath } from "astro-i18next";
             <summary> {t("site.jews")}</summary>
             <ul>
               <li>
-                <a href={localizePath("./synagogue")}>{t("site.synagogue")}</a>
+                <a href={localizePath("synagogue")}>{t("site.synagogue")}</a>
               </li>
-              <li><a href={localizePath("./hara")}>{t("site.hara")}</a></li>
+              <li><a href={localizePath("hara")}>{t("site.hara")}</a></li>
               <li>
-                <a href={localizePath("./sacred-sites")}>{t("site.sacred")}</a>
+                <a href={localizePath("sacred-sites")}>{t("site.sacred")}</a>
               </li>
               <li>
                 <a href="/documents/Polity - The Jews of Saida.pdf"
@@ -68,7 +68,7 @@ import { localizePath } from "astro-i18next";
             </ul>
           </details>
         </li>
-        <li><a href={localizePath("./about")}>{t("site.about")}</a></li>
+        <li><a href={localizePath("about")}>{t("site.about")}</a></li>
       </ul>
     </div>
   </div>
