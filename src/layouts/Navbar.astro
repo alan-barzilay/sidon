@@ -26,7 +26,7 @@ import { localizePath } from "astro-i18next";
       >
         <li class="text-xl font-bold">{t("site.nabi")}</li>
         <li>
-          <a rel="prefetch" href={localizePath("cemetery")}
+          <a href={localizePath("cemetery")} data-astro-prefetch="viewport"
             >{t("site.cemetery")}</a
           >
         </li>
@@ -45,7 +45,7 @@ import { localizePath } from "astro-i18next";
     <div class="hidden md:contents">
       <ul class="menu menu-horizontal mx-auto text-sm sm:text-base md:gap-x-10">
         <li>
-          <a rel="prefetch" href={localizePath("cemetery")}
+          <a href={localizePath("cemetery")} data-astro-prefetch="viewport"
             >{t("site.cemetery")}</a
           >
         </li>
