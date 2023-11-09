@@ -32,7 +32,7 @@ jobs:
           FOLDER: public #directory to generate index
 
       - name: Install, build, and upload your site output
-        uses: withastro/action@v0
+        uses: withastro/action@v1
 
   deploy:
     needs: build
