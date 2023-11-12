@@ -27,12 +27,17 @@ export function create_table() {
         let container = document.createElement("div");
         data.has_photo == false
             ? (container.innerHTML = "No photo available")
-            : (container.innerHTML = `<img src="${import.meta.env.SITE +
-                "tombs_small_single/" +
-                data.tomb_id +
-                ".avif"
-                }"
-                                 class="mx-auto object-contain h-96" />`);
+            : (container.innerHTML = `
+            <div class="relative h-96 w-64 sm:w-96">
+                <img src="${import.meta.env.SITE}tombs_small_single/${data.tomb_id}.avif"
+                    class="mx-auto object-contain h-96" />
+                <div class="absolute -z-10 h-full w-full inset-0">
+                    <div class="flex w-full h-full justify-center items-center"> 
+                        <p>Loading...</p>
+                    </div>
+                </div>
+            </div>     
+                 `);
 
         return container;
     }
