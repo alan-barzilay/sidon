@@ -15,7 +15,7 @@
     "@fontsource-variable/raleway": "^5.0.16",
     "@panzoom/panzoom": "^4.5.1",
     "@tailwindcss/container-queries": "^0.1.1",
-    "astro": "^3.5.0",
+    "astro": "^3.6.5",
     "astro-i18next": "^1.0.0-beta.21",
     "astro-robots-txt": "^1.0.0",
     "sharp": "^0.32.6",
